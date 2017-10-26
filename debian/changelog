@@ -1,4 +1,4 @@
-maliit-framework (0.99.1+git20151118+62bd54b-0ubuntu15) artful; urgency=medium
+maliit-framework (0.99.1+git20151118+62bd54b+ubports) xenial; urgency=medium
 
   * Build-depend on qml-module-qtquick2 instead of transitional package
     qtdeclarative5-qtquick2-plugin.

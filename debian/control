@@ -3,7 +3,7 @@ Section: libs
 Priority: extra
 Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 XSBC-Original-Maintainer: Debian Mobile Team <debian-mobile@lists.debian.org>
-Uploaders: Michał Zając <quintasan@kubuntu.org>, Iain Lane <laney@debian.org>
+Uploaders: Michal Zajac <quintasan@kubuntu.org>, Iain Lane <laney@debian.org>
 Build-Depends: cdbs,
                debhelper (>= 9),
                libdbus-1-dev,
