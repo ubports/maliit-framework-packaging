@@ -60,7 +60,7 @@ Index: maliit-framework-0.99.1+git20151118+62bd54b/connection/dbusinputcontextco
      qDBusRegisterMetaType<Maliit::PreeditTextFormat>();
      qDBusRegisterMetaType<QList<Maliit::PreeditTextFormat> >();
  
-+    if (QGuiApplication::platformName() == "ubuntumirclient") {
++    if (QGuiApplication::platformName() == "ubuntumirclient" || QGuiApplication::platformName() == "wayland") {
 +        QDBusConnection bus = QDBusConnection::sessionBus();
 +        mUnityFocus = new QDBusInterface(DBusUnityFocusInterface,
 +                                         DBusUnityFocusPath,
@@ -81,7 +81,7 @@ Index: maliit-framework-0.99.1+git20151118+62bd54b/connection/dbusinputcontextco
  void DBusInputContextConnection::activateContext()
  {
 -    MInputContextConnection::activateContext(connectionNumber());
-+    if (QGuiApplication::platformName() == "ubuntumirclient") {
++    if (QGuiApplication::platformName() == "ubuntumirclient" || QGuiApplication::platformName() == "wayland") {
 +        // If we're running under Mir verify that the application really
 +        // has focus.
 +        unsigned long pid = 0;
