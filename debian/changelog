@@ -1,3 +1,9 @@
+maliit-framework (0.99.1+git20151118+62bd56b-0ubports2) xenial; urgency=medium
+
+  * Stop client crashing when QGuiApplication::focusObject is null
+
+ -- Dalton Durst <dalton@ubports.com>  Thu, 26 Mar 2020 16:02:50 -0500
+
 maliit-framework (0.99.1+git20151118+62bd56b-0ubports1) xenial; urgency=medium
 
   * Build-depend on qml-module-qtquick2 instead of transitional package
@@ -421,5 +427,3 @@ maliit-framework (0.81.0.1-0) unstable; urgency=low
   * New release
 
  -- Jon Nordby <jonn@openismus.com>  Tue, 06 Sep 2011 12:41:43 +0300
-
-
