@@ -15,3 +15,4 @@ qt_override_server_address
 compose-input-platform-in-maliit.patch
 0016-set-plugin-path-from-environment.patch
 0017-maliit-config-path-environment-variable.patch
+0018-focus-object-can-be-null.patch
