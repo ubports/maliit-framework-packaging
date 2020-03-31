@@ -1,0 +1,23 @@
+Index: maliit-framework-0.99.1+git20151118+62bd56b/input-context/minputcontext.cpp
+===================================================================
+--- maliit-framework-0.99.1+git20151118+62bd56b.orig/input-context/minputcontext.cpp	2020-03-26 18:35:00.000000000 -0500
++++ maliit-framework-0.99.1+git20151118+62bd56b/input-context/minputcontext.cpp	2020-03-30 11:41:48.399335549 -0500
+@@ -306,7 +306,7 @@
+         active = true;
+     }
+ 
+-    if (currentFocusAcceptsInput) {
++    if (newFocusWindow && currentFocusAcceptsInput) {
+         updateServerOrientation(newFocusWindow->contentOrientation());
+     }
+ 
+@@ -847,6 +847,9 @@
+     if (!inputMethodAccepted()) {
+         return;
+     }
++    if (!qGuiApp->focusObject()) {
++        return;
++    }
+     if (debug) qDebug() << InputContextName << __PRETTY_FUNCTION__;
+ 
+     QVariantMap extensions = qGuiApp->focusObject()->property("__inputMethodExtensions").toMap();
