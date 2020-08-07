@@ -1,3 +1,15 @@
+maliit-framework (0.99.1+git20151118+62bd56b-0ubports2.3) xenial; urgency=medium
+
+  * No-change rebuild for Qt 5.12.9 ABI.
+
+ -- Rodney Dawes <dobey@ubports.com>  Tue, 29 Sep 2020 12:54:31 -0400
+
+maliit-framework (0.99.1+git20151118+62bd56b-0ubports2.1) xenial; urgency=medium
+
+  * No change rebuild against Qt 5.12.
+
+ -- Rodney Dawes <dobey@ubports.com>  Fri, 07 Aug 2020 15:41:21 -0400
+
 maliit-framework (0.99.1+git20151118+62bd56b-0ubports2) xenial; urgency=medium
 
   * Stop client crashing when QGuiApplication::focusObject is null
