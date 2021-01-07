@@ -16,7 +16,7 @@ Build-Depends: cdbs,
                libxext-dev,
                pkg-config,
                qt5-default,
-               qtbase5-dev (>= 5.2),
+               qtbase5-dev (>= 5.12.8~),
                qtbase5-private-dev,
                qtdeclarative5-dev,
 # Test depends
